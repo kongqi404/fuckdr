@@ -10,11 +10,11 @@ dependencies = [
 
 ]
 description = "fuck duodian"
-# [project.urls]
-# "Homepage" = "https://github.com/kongqi404/timeseries_research"
+[project.urls]
+"Homepage" = "https://github.com/kongqi404/fuckdr"
 
-# [tool.setuptools.packages.find]
-# exclude = ["tests*",]
+[tool.setuptools.packages.find]
+exclude = ["tests*",]
 
 [project.scripts]
 fuckdr = "fuckdr.fkdr:main"
