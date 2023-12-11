@@ -44,6 +44,6 @@ jobs:
   - name: upload artifact
     uses: actions/upload-artifact@v3 
     with:
-        name: fuckdr
+        name: fuckdr ${{ matrix.os }} ${{ matrix.python-version }}
         path: dist/*.whl
  
