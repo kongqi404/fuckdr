@@ -1,0 +1,20 @@
+[project]
+name = "fuckdr"
+version = "0.0.1"
+authors = [{name = "kongqi", email = "kongqiahaha@gmail.com"},]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pycryptodomex",
+
+]
+description = "fuck duodian"
+# [project.urls]
+# "Homepage" = "https://github.com/kongqi404/timeseries_research"
+
+# [tool.setuptools.packages.find]
+# exclude = ["tests*",]
+
+[project.scripts]
+fuckdr = "fuckdr.fkdr:main"
