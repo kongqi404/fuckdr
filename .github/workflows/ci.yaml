@@ -34,12 +34,10 @@ jobs:
      cache-dependency-path: '**/pyproject*.toml'
   - name: Install dependencies
     run: |
-        pip install -e .
+        python -m build
         pip install pytest
   - name: test
     run: pytest tests
-  - name: build
-    run: python -m build
   - name: upload artifact
     uses: actions/upload-artifact@v3 
     with:
